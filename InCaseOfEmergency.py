@@ -22,8 +22,8 @@ SIGNATURES = {
 
 def validate_shattered_glass():
     print("=" * 70)
-    print("🚨 IN CASE OF EMERGENCY: SHATTERED GLASS VALIDATOR")
-    print("Proves BBMwzmZu → utun0 → Israeli ISP causal chain")
+    print("IN CASE OF EMERGENCY: SHATTERED GLASS VALIDATOR")
+    print("Shows BBMwzmZu → utun0 → Israeli ISP causal chain")
     print("=" * 70)
     
     if not os.path.exists('logdata.LiveData.tracev3'):
