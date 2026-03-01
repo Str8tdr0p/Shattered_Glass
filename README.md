@@ -55,7 +55,9 @@ BLE "Nearby Action" → Transient Trust (NeedsSetup/Problems 0x20000) → DART/I
 BBMwzmZu held in perpetual "Proximity Handshake"... invisible in Bluetooth UI.
 
 ---
-`InCaseOfEmergency.py` attached... run against logdata.LiveData.tracev3 to verify BBMwzmZu → utun0 → Partner Israel causal chain.
+### Verification
+`InCaseOfEmergency.py` validates causal chain against `logdata.LiveData.tracev3`
+- `SHA256: 9b9e85e6ac6357dc8901ed7cf32d67a588b7590fd8104a505907a89a2909d177`
 
 ---
 
