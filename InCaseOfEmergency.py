@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
 """
 Shattered Glass Forensic Validator
 InCaseOfEmergency.py - Run against any tracev3 for instant causal chain proof
 Researcher: Joseph Raymond Goydish II (Ace's Father)
 """
+#!/usr/bin/env python3
 
 import os
 import re
