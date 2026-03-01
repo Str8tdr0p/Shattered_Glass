@@ -1,5 +1,5 @@
 # Shattered Glass
-### Subject: Hardware-Persistent Side-Channel Interception (iPhone 14 Pro Max)  
+### Hardware-Persistent Side-Channel Interception 
 **Security Rating:** CRITICAL (Zero-Click / Silicon-Persistence)  
 **Estimated CVSS v4.0:** 9.1 (AV:P/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N)
 
@@ -53,3 +53,10 @@ BLE "Nearby Action" → Transient Trust (NeedsSetup/Problems 0x20000) → DART/I
 
 ### C: NeedsSetup Lock
 BBMwzmZu held in perpetual "Proximity Handshake"... invisible in Bluetooth UI.
+
+---
+`InCaseOfEmergency.py` attached... run against logdata.LiveData.tracev3 to verify BBMwzmZu → utun0 → Partner Israel causal chain.
+
+---
+
+End Of Disclosure 
