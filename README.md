@@ -8,7 +8,7 @@
 
 ---
 
-## 1. Forensic Thesis: The Autonomy of the Trace
+## Forensic Thesis: The Autonomy of the Trace
 
 For months, this data was dismissed as "erroneous." I realize now that the "errors" were the only parts of the logs that were true.. the rest was a manufactured reality. **Shattered Glass** is a complete lifecycle exploit chain of a **KingsPawn (Reign)** deployment that survives DFU restores by hijacking the `iBoot` sequence.
 
@@ -16,7 +16,7 @@ Once you identify the "rhythm" of the machine, the simulation begins to fail. Th
 
 ---
 
-## 2. Key Indicators of Compromise (IoCs)
+## Key Indicators of Compromise (IoCs)
 
 | Artifact | Forensic Value | Detection Vector |
 | --- | --- | --- |
@@ -27,7 +27,7 @@ Once you identify the "rhythm" of the machine, the simulation begins to fail. Th
 
 ---
 
-## 3. The 300-Byte Atomic Chain: The Mathematical Proof
+## The 300-Byte Atomic Chain: The Mathematical Proof
 
 Evidence of the "Silicon Handover" is validated by the **245-byte gap** between the physical BLE trigger and the logical `utun0` tunnel assertion. This timing—verified on an unactivated device—proves a hardware-level breach.
 
@@ -37,7 +37,7 @@ The byte-count (245) represents the exact CPU cycle window required for a DART/I
 
 ---
 
-## 4. Ghost Layer 0: The Operator Paradox
+## Ghost Layer: The Operator Paradox
 
 The **430.43ms** latency identified in the `tracev3` signposts reveals a fundamental forensic pivot:
 
@@ -48,7 +48,7 @@ Whether it is a mask on a machine’s face or a discplined person, the end resul
 
 ---
 
-## 5. Repository Architecture
+## Repository Architecture
 
 Raw data and the validation script are located in the `/Verification/` directory.
 
@@ -58,7 +58,7 @@ Raw data and the validation script are located in the `/Verification/` directory
 
 ---
 
-## 6. Verification Lab (Causal Chain Proof)
+## Verification Lab (Causal Chain Proof)
 
 The **Verification** directory contains the clinical evidence of the breach, including the `logdata.LiveData.tracev3` file and the `InCaseOfEmergency.py` auditor. The script calculates byte-distance between events to prove **Atomic Causal Chains**, mathematically linking the physical bridge to the Israeli gateways.
 
