@@ -2,7 +2,6 @@
 Shattered Glass Forensic Validator
 InCaseOfEmergency.py - Ran against a prodcution logdata.LiveData.tracev3 
 verifying causal chain proof
-Researcher: Joseph Raymond Goydish II (Ace's Father)
 """
 #!/usr/bin/env python3
 
