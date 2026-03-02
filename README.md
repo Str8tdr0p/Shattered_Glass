@@ -3,15 +3,9 @@
 
 **UCRT Extraction Verification**  
 **SHA256**: `ec45f3657df082e0a230cc9c1da69b71f7b14790526925a768da6675ab7bac8e`  
- **Repo Location:** `/Verification/shatteredglass_ucrt.der`
-
-
----
+ **Repo Location:** `/Verification/shatteredglass_ucrt.der
 
 **Attribution**: KingsPawn (Reign) Silicon-Layer Persistence
-
-
-### **Attribution: KingsPawn (Reign) Silicon-Layer Persistence**
 
 **Target Hardware:** Apple Silicon 
 
