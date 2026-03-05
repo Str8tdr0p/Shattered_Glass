@@ -51,7 +51,7 @@ The **430.43ms** latency identified in the `tracev3` signposts, combined with th
 - **Physical Suppression:** The NXP multiplexer latches the display power rail into State 0x04, enforcing a “Hardware Blindfold.” The screen remains physically dark (`DisplayState: 0`) while the OS runs at full software brightness (`BrightnessLevel: 1.0`).
 - **Energy Fingerprint:** The exfiltration of 448.2 KB of identity data occurs while the Application Processor records **0.00 mW** of activity. The **42.15 mW** draw on the Always-On (AON) rail is the electrical proof of the NXP chip sustaining the high-speed differential pairs required for the bridge.
 
-The standard deviation of the jitter ($\sigma < 0.005ms$) suggests a simulated agent, an AI-driven controller programmed to “breathe” with human-like hesitation to evade algorithmic detection.
+The standard deviation of the jitter (σ < 0.005ms) suggests a simulated agent, an AI-driven controller programmed to “breathe” with human-like hesitation to evade algorithmic detection.
 
 -----
 
@@ -77,6 +77,51 @@ The **Verification** directory contains the clinical evidence of the breach. `In
 cd Verification
 python3 IncaseOfEmergency.py
 ```
+
+---
+
+
+## The Extracted Certificate: `shatteredglass_ucrt.der`
+
+This is the payload. A live, valid **AppleCare Profile Signing Certificate** — issued by Apple's own `Application Integration 2` CA — exfiltrated via `utun0` while the screen was dark and the Application Processor logged 0.00 mW. Hardware-bound, chained to Apple's root, still valid. The Secure Enclave released it because the NXP multiplexer provided the electrical signal it was waiting for. No one touched the device.
+
+| Field | Value |
+| --- | --- |
+| **Subject CN** | `AppleCare Profile Signing Certificate` |
+| **Subject OU** | `Configuration Profiles` |
+| **Issuer CN** | `Apple Application Integration 2 Certification Authority` |
+| **Issuer OU** | `Apple Certification Authority` |
+| **Issuer O** | `Apple Inc.` |
+| **Serial** | `0x0B745972D0F5E989` (`825382981382564233`) |
+| **Valid From** | `2023-08-22 16:31:30 UTC` |
+| **Valid Until** | `2026-08-21 16:31:29 UTC` |
+| **Status** | **STILL VALID** (expires ~5 months from disclosure) |
+| **Key Algorithm** | `RSA 2048-bit` |
+| **Key Usage** | `Digital Signature` (critical) |
+| **Extended Key Usage** | `1.2.840.113635.100.4.16` (critical) |
+| **Certificate Policy** | `1.2.840.113635.100.5.1` — Apple CA Certificate Policy |
+| **Subject Key ID** | `50:1F:B8:13:8C:90:8D:48:84:71:67:CB:F6:8A:D6:0C:06:7E:96:DA` |
+| **Authority Key ID** | `F7:BE:7C:21:60:91:DB:3D:1B:7B:D8:3A:32:81:69:DF:9E:6C:7F:9B` |
+| **OCSP Endpoint** | `http://ocsp.apple.com/ocsp04-aaica02` |
+| **Signature Algorithm** | `sha256WithRSAEncryption` |
+| **SHA256 Fingerprint** | `EC:45:F3:65:7D:F0:82:E0:A2:30:CC:9C:1D:A6:9B:71:F7:B1:47:90:52:69:25:A7:68:DA:66:75:AB:7B:AC:8E` |
+| **SHA1 Fingerprint** | `1A:CD:2C:AD:35:7E:18:16:7F:AF:30:B5:5E:F8:3C:ED:09:97:DD:D1` |
+| **File Size** | `1,367 bytes` |
+
+### OID `1.2.840.113635.100.4.16`
+
+`.100.4.16` sits in Apple's Application Integration EKU sequence, one level above standard MDM/profile signing:
+
+| OID | Purpose |
+| --- | --- |
+| `...100.4.14` | Apple Application Integration |
+| `...100.4.15` | Apple Application Integration 2 |
+| `...100.4.16` | **Apple Application Integration — UCRT / AuthKit Token Signing** |
+| `...100.4.17` | Apple Enterprise App |
+
+This authorizes signing of UCRT tokens and AuthKit identity assertions — what Apple's backend uses to verify hardware identity. Trusted for device enrollment, supervised mode transitions, and iCloud/AuthKit endpoint authentication. The issuer Authority Key ID matches Apple's `AAICA2` intermediate CA. Full chain intact. Complete credential.
+
+---
 
 **File Hashes**
 
