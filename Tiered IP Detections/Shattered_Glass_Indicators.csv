@@ -1,0 +1,131 @@
+Target IP,Risk Level,Primary Path,Techniques (Masks),Intensity (Hits),Current State,Forensic Tier
+76.72.114.148,CRITICAL,Indeterminate | awdl0 (AWDL — daemon implied) | en0 (WiFi) | utun0 (Shattered Glass),"Location (locationd), NSURLSession (cfnetwork), SpringBoard (ghost UI), Symptoms Daemon (symptomsd), System Internal",78,ACTIVE_IN_SKYWALK,Persist
+26.173.231.120,CRITICAL,Indeterminate | en0 (WiFi — daemon implied) | en0 (WiFi) | pdp_ip0 (Cellular — daemon implied),"NSURLSession (cfnetwork), SpringBoard (ghost UI), Symptoms Daemon (symptomsd), System Internal, Telephony/Baseband, Weather",41,ACTIVE_IN_SKYWALK,Persist
+93.187.221.199,CRITICAL,Indeterminate | en0 (WiFi — daemon implied) | en0 (WiFi),"NSURLSession (cfnetwork), Rapport/Continuity (rapportd), SpringBoard (ghost UI), System Internal, mDNS (mdnsresponder)",40,ACTIVE_IN_SKYWALK,Persist
+48.205.77.41,CRITICAL,Indeterminate | awdl0 (AWDL Sidechannel) | en0 (WiFi — daemon implied) | en0 (WiFi),"Location (locationd), NFC (generic), NSURLSession (cfnetwork), System Internal, Weather, iCloud (CloudKit)",39,ACTIVE_IN_SKYWALK,Persist
+130.68.12.152,CRITICAL,Indeterminate | en0 (WiFi),"Bluetooth Daemon (bluetoothd), NSURLSession (cfnetwork), Sharing/AirDrop (sharingd), System Internal, mDNS (mdnsresponder)",24,ACTIVE_IN_SKYWALK,Persist
+51.176.169.55,CRITICAL,Indeterminate | awdl0 (AirDrop/Sharing — daemon implied),"AuthKit (akd), NSURLSession (cfnetwork), Sharing/AirDrop (sharingd), StorageDB (pivot), System Internal",17,ACTIVE_IN_SKYWALK,system_logs.logarchive
+70.181.100.134,CRITICAL,Indeterminate | en0 (WiFi) | pdp_ip0 (Cellular — daemon implied),"NSURLSession (cfnetwork), System Internal",17,ACTIVE_IN_SKYWALK,Persist
+93.22.97.158,CRITICAL,Indeterminate | awdl0 (AWDL — daemon implied),"NSURLSession (cfnetwork), SpringBoard (ghost UI), System Internal",17,ACTIVE_IN_SKYWALK,Persist
+121.124.147.152,CRITICAL,Indeterminate | en0 (WiFi),"NSURLSession (cfnetwork), System Internal, mDNS (mdnsresponder)",13,ACTIVE_IN_SKYWALK,Persist
+26.187.74.201,CRITICAL,Indeterminate | en0 (WiFi),"NSURLSession (cfnetwork), System Internal, mDNS (mdnsresponder)",12,ACTIVE_IN_SKYWALK,Persist
+162.5.226.48,CRITICAL,Indeterminate | en0 (WiFi),"SpringBoard (ghost UI), Symptoms Daemon (symptomsd), System Internal",9,ACTIVE_IN_SKYWALK,Persist
+57.102.226.106,CRITICAL,Indeterminate | en0 (WiFi),"NSURLSession (cfnetwork), System Internal",5,ACTIVE_IN_SKYWALK,Persist
+143.66.166.183,CRITICAL,Indeterminate | pdp_ip0 (Cellular — daemon implied),"System Internal, Telephony/Baseband",4,ACTIVE_IN_SKYWALK,system_logs.logarchive
+205.165.123.69,CRITICAL,Indeterminate | nfc0 (NFC — daemon implied) | pdp_ip0 (Cellular — daemon implied),"NFC Daemon (nfcd), StorageDB (pivot), System Internal",4,ACTIVE_IN_SKYWALK,Persist
+179.166.79.95,CRITICAL,awdl0 (AWDL — daemon implied) | en0 (WiFi),System Internal,4,ACTIVE_IN_SKYWALK,Persist
+162.81.0.73,CRITICAL,Indeterminate | pdp_ip0 (Cellular — daemon implied),"SpringBoard (ghost UI), System Internal",3,ACTIVE_IN_SKYWALK,system_logs.logarchive
+4.58.13.93,CRITICAL,Indeterminate | en0 (WiFi),"NSURLSession (cfnetwork), System Internal",3,ACTIVE_IN_SKYWALK,Persist
+197.159.80.156,CRITICAL,Indeterminate | pdp_ip0 (Cellular — daemon implied),"NFC (generic), System Internal",3,ACTIVE_IN_SKYWALK,Persist
+141.28.180.152,CRITICAL,Indeterminate | pdp_ip0 (Cellular — daemon implied),"System Internal, Weather",2,ACTIVE_IN_SKYWALK,system_logs.logarchive
+220.46.171.72,CRITICAL,awdl0 (AWDL — daemon implied) | en0 (WiFi),"System Internal, Weather",2,ACTIVE_IN_SKYWALK,Persist
+185.115.49.10,CRITICAL,pdp_ip0 (Cellular — daemon implied) | pdp_ip0 (Cellular),"System Internal, Telephony/Baseband",2,ACTIVE_IN_SKYWALK,Persist
+56.254.154.201,CRITICAL,en0 (WiFi),System Internal,2,ACTIVE_IN_SKYWALK,Persist
+83.57.118.121,CRITICAL,Indeterminate | awdl0 (AirDrop/Sharing — daemon implied),"AirDrop, Sharing/AirDrop (sharingd)",2,ACTIVE_IN_SKYWALK,Persist
+86.144.14.140,CRITICAL,Indeterminate | en0 (WiFi),"Shortcuts, System Internal",2,ACTIVE_IN_SKYWALK,Persist
+89.125.150.35,CRITICAL,en0 (WiFi),System Internal,1,ACTIVE_IN_SKYWALK,Persist
+238.14.205.149,ELEVATED,Indeterminate,"NSURLSession (cfnetwork), StorageDB (pivot), System Internal",34,HISTORICAL,Persist
+111.70.39.238,ELEVATED,Indeterminate,"AuthKit (akd), NFC (generic), NSURLSession (cfnetwork), System Internal",24,HISTORICAL,Persist
+44.112.211.133,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), System Internal",19,HISTORICAL,Persist
+81.238.54.205,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), Shortcuts, Siri, System Internal",18,HISTORICAL,Persist
+5.66.190.74,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), System Internal",18,HISTORICAL,Persist
+66.236.97.79,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), Shortcuts, System Internal",12,HISTORICAL,system_logs.logarchive
+83.85.231.65,MEDIUM,Indeterminate,"System Internal, mDNS (mdnsresponder)",9,HISTORICAL,system_logs.logarchive
+188.209.236.114,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), System Internal",9,HISTORICAL,Persist
+181.33.173.224,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), System Internal, Weather",8,HISTORICAL,Persist
+102.58.73.128,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), Network Daemon, System Internal",7,HISTORICAL,system_logs.logarchive
+36.125.163.141,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), System Internal",7,HISTORICAL,Persist
+157.63.92.119,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), System Internal",7,HISTORICAL,Persist
+142.34.23.236,MEDIUM,Indeterminate,"AuthKit (akd), Siri, System Internal, Weather, iCloud (CloudKit)",7,HISTORICAL,Persist
+96.213.198.223,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), System Internal",7,HISTORICAL,Persist
+30.32.167.227,MEDIUM,Indeterminate,"App Store (MZStore), System Internal",6,HISTORICAL,system_logs.logarchive
+77.210.182.5,MEDIUM,Indeterminate,System Internal,6,HISTORICAL,system_logs.logarchive
+198.110.137.200,MEDIUM,Indeterminate,"App Store (MZStore), System Internal",6,HISTORICAL,system_logs.logarchive
+209.40.101.15,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), System Internal",6,HISTORICAL,system_logs.logarchive
+172.240.88.37,MEDIUM,Indeterminate,"NSURLSession (cfnetwork), SpringBoard (ghost UI), System Internal",6,HISTORICAL,Persist
+169.178.62.204,MEDIUM,Indeterminate,"Network Daemon, Siri, Symptoms Daemon (symptomsd), System Internal",6,HISTORICAL,Persist
+191.80.251.130,LOW,Indeterminate,"App Store (MZStore), NSURLSession (cfnetwork), System Internal",5,HISTORICAL,system_logs.logarchive
+32.12.148.74,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",5,HISTORICAL,system_logs.logarchive
+182.184.105.43,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",5,HISTORICAL,Persist
+178.108.221.22,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",5,HISTORICAL,Persist
+185.192.120.71,LOW,Indeterminate | awdl0/utun (Remote Pairing — daemon implied) | nfc0 (NFC — daemon implied),"NFC Daemon (nfcd), Remote Pairing (remotepairingd), Shortcuts, System Internal",5,HISTORICAL,Persist
+49.88.167.166,LOW,Indeterminate,System Internal,5,HISTORICAL,Persist
+43.84.247.165,LOW,Indeterminate,System Internal,4,HISTORICAL,system_logs.logarchive
+190.88.20.47,LOW,Indeterminate,"App Store (MZStore), System Internal",4,HISTORICAL,system_logs.logarchive
+148.42.105.155,LOW,Indeterminate,"NFC (generic), NSURLSession (cfnetwork), System Internal",4,HISTORICAL,Persist
+231.227.1.243,LOW,Indeterminate,System Internal,4,HISTORICAL,Persist
+222.52.212.235,LOW,Indeterminate,"Network Daemon, System Internal",4,HISTORICAL,Persist
+43.181.219.49,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",4,HISTORICAL,Persist
+119.109.255.158,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",4,HISTORICAL,Persist
+35.242.224.245,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",4,HISTORICAL,Persist
+52.50.49.183,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",3,HISTORICAL,system_logs.logarchive
+171.108.202.225,LOW,Indeterminate,"NSURLSession (cfnetwork), Network Daemon, iCloud (CloudKit)",3,HISTORICAL,system_logs.logarchive
+103.178.252.38,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",3,HISTORICAL,system_logs.logarchive
+54.82.153.151,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",3,HISTORICAL,system_logs.logarchive
+197.37.247.245,LOW,Indeterminate,"Shortcuts, Siri, System Internal",3,HISTORICAL,Persist
+1.231.193.221,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",3,HISTORICAL,Persist
+145.141.108.64,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",3,HISTORICAL,Persist
+203.35.213.157,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",3,HISTORICAL,Persist
+226.193.70.14,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",3,HISTORICAL,Persist
+11.162.148.121,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",3,HISTORICAL,Persist
+90.198.111.124,LOW,Indeterminate,System Internal,3,HISTORICAL,Persist
+50.95.119.206,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",3,HISTORICAL,Persist
+132.87.106.136,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",3,HISTORICAL,Persist
+182.21.64.239,LOW,Indeterminate,"AuthKit (akd), System Internal",3,HISTORICAL,Persist
+184.42.43.222,LOW,Indeterminate,"System Internal, Weather",2,HISTORICAL,system_logs.logarchive
+58.12.173.54,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",2,HISTORICAL,system_logs.logarchive
+168.245.233.143,LOW,Indeterminate,System Internal,2,HISTORICAL,Persist
+142.208.95.157,LOW,Indeterminate,"Shortcuts, Siri",2,HISTORICAL,Persist
+119.56.255.203,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",2,HISTORICAL,Persist
+40.96.98.82,LOW,Indeterminate,System Internal,2,HISTORICAL,Persist
+140.76.31.187,LOW,Indeterminate,"Symptoms Daemon (symptomsd), System Internal",2,HISTORICAL,Persist
+1.74.33.196,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",2,HISTORICAL,Persist
+182.5.14.217,LOW,Indeterminate,"SpringBoard (ghost UI), System Internal",2,HISTORICAL,Persist
+210.63.119.89,LOW,Indeterminate,System Internal,2,HISTORICAL,Persist
+201.238.43.13,LOW,Indeterminate,System Internal,2,HISTORICAL,Persist
+85.238.216.75,LOW,Indeterminate,NSURLSession (cfnetwork),2,HISTORICAL,Persist
+115.74.111.53,LOW,Indeterminate,System Internal,2,HISTORICAL,Persist
+159.209.155.136,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",2,HISTORICAL,Persist
+187.108.136.217,LOW,Indeterminate,System Internal,2,HISTORICAL,Persist
+2.24.196.196,LOW,Indeterminate,"NSURLSession (cfnetwork), System Internal",2,HISTORICAL,Persist
+211.32.55.232,LOW,Indeterminate,System Internal,2,HISTORICAL,Persist
+107.36.159.76,LOW,Indeterminate,System Internal,2,HISTORICAL,Persist
+51.32.69.124,LOW,Indeterminate,Siri,1,HISTORICAL,system_logs.logarchive
+121.4.31.175,LOW,Indeterminate,System Internal,1,HISTORICAL,system_logs.logarchive
+229.66.216.109,LOW,Indeterminate,iCloud (CloudKit),1,HISTORICAL,system_logs.logarchive
+20.100.190.56,LOW,Indeterminate,NSURLSession (cfnetwork),1,HISTORICAL,system_logs.logarchive
+82.176.235.58,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+106.207.51.87,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+126.2.76.245,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+168.174.213.226,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+48.66.124.48,LOW,Indeterminate,NSURLSession (cfnetwork),1,HISTORICAL,Persist
+59.118.174.185,LOW,Indeterminate,NSURLSession (cfnetwork),1,HISTORICAL,Persist
+139.131.203.26,LOW,Indeterminate,NSURLSession (cfnetwork),1,HISTORICAL,Persist
+103.238.255.173,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+225.218.1.246,LOW,Indeterminate,Network Daemon,1,HISTORICAL,Persist
+106.252.61.92,LOW,Indeterminate,Network Daemon,1,HISTORICAL,Persist
+164.99.70.186,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+196.31.108.94,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+15.165.216.19,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+239.198.247.100,LOW,Indeterminate,Network Daemon,1,HISTORICAL,Persist
+114.206.85.223,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+189.109.9.39,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+201.144.233.46,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+61.5.32.112,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+14.165.126.17,LOW,Indeterminate,Network Daemon,1,HISTORICAL,Persist
+215.247.127.66,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+40.154.10.91,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+47.210.110.27,LOW,Indeterminate,NSURLSession (cfnetwork),1,HISTORICAL,Persist
+83.246.137.47,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+238.243.122.208,LOW,Indeterminate,Network Daemon,1,HISTORICAL,Persist
+57.137.8.83,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+204.92.173.161,LOW,Indeterminate,NSURLSession (cfnetwork),1,HISTORICAL,Persist
+169.212.223.122,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+121.189.37.153,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+227.73.172.147,LOW,Indeterminate,Weather,1,HISTORICAL,Persist
+52.216.205.161,LOW,Indeterminate,Shortcuts,1,HISTORICAL,Persist
+9.109.162.227,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+188.100.205.180,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
+95.252.108.250,LOW,Indeterminate,Siri,1,HISTORICAL,Persist
+62.139.178.57,LOW,awdl0/utun (Remote Pairing — daemon implied),Remote Pairing (remotepairingd),1,HISTORICAL,Persist
+111.74.21.202,LOW,Indeterminate,System Internal,1,HISTORICAL,Persist
