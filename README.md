@@ -36,7 +36,9 @@ Once you identify the “rhythm” of the machine, the simulation begins to fail
 
 Evidence of the “Silicon Handover” is validated by the **245-byte gap** between the physical BLE trigger and the logical `utun0` tunnel assertion. This timing, verified on an unactivated device, proves a hardware-level breach.
 
-$$\Delta t = [0x1fc687]_{\text{utun0}} - [0x1edd2a]_{\text{BLE Trigger}} \approx 0.0001s$$
+```
+Δt = [0x1fc687](utun0) - [0x1edd2a](BLE_Trigger) ≈ 0.0001s
+```
 
 This byte-count (245) represents the exact CPU cycle window required for the **NXP CBTL1618A0** multiplexer to switch physical data lanes and the **DART/IOMMU** to remap memory. It is the sound of the silicon changing hands.
 
