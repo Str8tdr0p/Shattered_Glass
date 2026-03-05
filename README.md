@@ -72,7 +72,7 @@ Raw data and the validation script are located in the `/Verification/` directory
 
 The **Verification** directory contains the clinical evidence of the breach. `IncaseOfEmergency.py` runs three independent evidence chains in a single pass and issues a unified verdict:
 
-* **Chain 1** — BLE bridge causal chain. Byte-distance analysis of `logdata.LiveData.tracev3` proving atomic proximity between the `BBMwzmZu` trigger, `NeedsSetup` state lock, and Israeli ISP signatures.
+* **Chain 1** — BLE bridge causal chain. Byte-distance analysis of `logdata.LiveData.tracev3` proving atomic proximity between the `BBMwzmZu` trigger, `NeedsSetup` state lock, sus ISP signatures.
 * **Chain 2** — NFC/UTUN hardware offset correlation across `0000000000000001.tracev3` and `logdata.LiveData.tracev3`. Confirms silicon-layer NFC to UTUN binding.
 * **Chain 3** — Powerlog structured analysis. Ghost UI conflict, SOC rail spikes, and power assertions pulled directly from the SQLite tables in `powerlog_2026-02-27_17-32_7A202661.PLSQL`.
 
