@@ -22,13 +22,16 @@ Once you identify the “rhythm” of the machine, the simulation begins to fail
 
 ## Key Indicators of Compromise (IoCs)
 
-|Artifact       |Forensic Value                   |Detection Vector                                      |
-|---------------|---------------------------------|------------------------------------------------------|
-|**BBMwzmZu**   |Physical BLE Side-Channel Trigger|Timing analysis of radio-silenced state.              |
-|**State 0x04** |**NXP CBTL1618A0 Mux Lock**      |Hardware trace offset `0xDC78` (Special Logs).        |
-|**42.15 mW**   |**SOC_AON Power Anomaly**        |PowerLog spike while CPU is idle (0.00 mW).           |
-|**`subridged`**|KingsPawn Residency              |Path-validation of unauthorized staging binaries.     |
-|**0x0234**     |**Silicon-Layer Attribution**    |Header injection (Partner Israel) in hardware buffers.|
+|Artifact|Forensic Value|Detection Vector|
+|--------|-------------|----------------|
+|**BBMwzmZu**|Physical BLE Side-Channel Trigger|Timing analysis of radio-silenced state.|
+|**State 0x04**|**NXP CBTL1618A0 Mux Lock**|Hardware trace offset `0xDC78` (Special Logs).|
+|**42.15 mW**|**SOC_AON Power Anomaly**|PowerLog spike while CPU is idle (0.00 mW).|
+|**`subridged`**|KingsPawn Residency|Path-validation of unauthorized staging binaries.|
+|**0x0234**|**Unattributed ISP Header Signature**|Header pattern in hardware buffers. ASN attribution pending.|
+|**`76.72.114.148`**|**Primary C2 Candidate — Interface Pivot**|en0 → awdl0 → utun0. 78 hits, Persist tier. `ACTIVE_IN_NETSTAT` on utun0 with locationd context.|
+|**`205.165.123.69`**|**NFC/Cellular Cluster**|NFC Daemon + StorageDB + pdp_ip0 co-attribution.|
+|**`48.205.77.41`**|**AWDL Sidechannel Contact**|Direct awdl0 hit + NFC + iCloud context. 39 hits.|
 
 -----
 
@@ -61,7 +64,7 @@ Raw data and the validation script are located in the `/Verification/` directory
 
 1. **[Phase 1: Silicon Handover](https://github.com/Str8tdr0p/Shattered_Glass/blob/main/1.%20Silicon%20Handover.md)**: Documentation of the entry point, the DART/IOMMU race, and the NXP Mux toggle.
 1. **[Phase 2: Ghost Layer](https://github.com/Str8tdr0p/Shattered_Glass/blob/main/2.%20Ghost%20Layer.md)**: Proof of Headless UI, hardware-enforced backlight suppression, and the 42mW power anomaly.
-1. **[Phase 3: Attribution & Identity](https://github.com/Str8tdr0p/Shattered_Glass/blob/main/3.%20Attribution%20&%20Identity.md)**: Final correlation of KingsPawn signatures, Israeli ISP header injection, and UCRT exfiltration.
+2. **[Phase 3: Attribution & Identity](https://github.com/Str8tdr0p/Shattered_Glass/blob/main/3.%20Attribution%20&%20Identity.md)**: Final correlation of KingsPawn signatures, unattributed ISP header injection, UCRT exfiltration, and network behavioral corroboration via SKYWALK analysis.
 
 -----
 
