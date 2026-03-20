@@ -1,10 +1,10 @@
 # PROJECT: SHATTERED GLASS
 
-## Forensic Thesis: The Autonomy of the Trace
+## Complete Lifecycle of a KingsPawn (Reign) Deployment
 
-For months, this data was dismissed as “erroneous.” I realize now that the “errors” were the only parts of the logs that were true… the rest was a manufactured reality. **Shattered Glass** is a complete lifecycle exploit chain of a **KingsPawn (Reign)** deployment that survives DFU restores by hijacking the `iBoot` sequence and anchoring itself into the physical wiring of the device.
+**Shattered Glass** documents a complete lifecycle exploit chain of a **KingsPawn (Reign)** deployment that survives DFU restores by hijacking the `iBoot` sequence and anchoring persistence through the NXP CBTL1618A0 multiplexer at the silicon layer.
 
-Once you identify the “rhythm” of the machine, the simulation begins to fail. This is the autopsy of a system that has learned to mimic the heartbeat of its targets… using silicon-level multiplexers to bypass the kernel… to remain invisible.
+System telemetry dismissed as “erroneous” proved to be the only accurate data — the rest was fabricated by the implant's reporting layer. This repository documents the full chain from entry through persistence.
 
 -----
 
@@ -54,7 +54,7 @@ The **430.43ms** latency identified in the `tracev3` signposts, combined with th
 - **Physical Suppression:** The NXP multiplexer latches the display power rail into State 0x04, enforcing a “Hardware Blindfold.” The screen remains physically dark (`DisplayState: 0`) while the OS runs at full software brightness (`BrightnessLevel: 1.0`).
 - **Energy Fingerprint:** The exfiltration of 448.2 KB of identity data occurs while the Application Processor records **0.00 mW** of activity. The **42.15 mW** draw on the Always-On (AON) rail is the electrical proof of the NXP chip sustaining the high-speed differential pairs required for the bridge.
 
-The standard deviation of the jitter (σ < 0.005ms) suggests a simulated agent, an AI-driven controller programmed to “breathe” with human-like hesitation to evade algorithmic detection.
+The standard deviation of the jitter (σ < 0.005ms) indicates a tightly controlled scheduling loop consistent with firmware-level timing rather than OS-level process scheduling.
 
 -----
 
